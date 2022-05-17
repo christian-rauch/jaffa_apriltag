@@ -49,9 +49,8 @@
   <!-- Use doc_depend for packages you need only for building documentation: -->
   <!--   <doc_depend>doxygen</doc_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>apriltag_ros</build_depend>
-  <build_export_depend>apriltag_ros</build_export_depend>
-  <exec_depend>apriltag_ros</exec_depend>
+
+  <depend>apriltag_ros</depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

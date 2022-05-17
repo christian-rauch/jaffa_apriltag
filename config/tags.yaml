@@ -1,0 +1,9 @@
+# The tags (including the white border) are printed on a 10x10 grid, but the tag
+# size is given by the size of the 8x8 grid without the white border. Hence, the
+# values given here are 8/10 of the printed tag size.
+
+standalone_tags:
+  [
+    {id: 0, size: 0.136, name: "jaffa"},
+    {id: 1, size: 0.10, name: "oats"},
+  ]
