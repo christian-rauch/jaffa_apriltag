@@ -2,8 +2,31 @@
 # size is given by the size of the 8x8 grid without the white border. Hence, the
 # values given here are 8/10 of the printed tag size.
 
-standalone_tags:
+# standalone_tags:
+#   [
+#     {id: 0, size: 0.136, name: "tag/jaffa"},
+#     {id: 1, size: 0.10, name: "tag/oats"},
+#   ]
+
+# Tracked objects only have a single tag each, but we are still using the 'tag_bundles'
+# instead of the 'standalone_tags' in order to publish the frame directly in the centre
+# of the object with the expected orientation.
+
+# Given the three dimensions of a box, the coordinate frame axes are aligned as follows:
+#   x: aligned with second largest/smallest side
+#   y: aligned with largest side
+#   z: aligned with smallest side
+
+# tag pose within object reference frame
+tag_bundles:
   [
-    {id: 0, size: 0.136, name: "jaffa"},
-    {id: 1, size: 0.10, name: "oats"},
+    {
+      name: 'obj/jaffa',
+      layout: [{id: 0, size: 0.136, z: 0.0275},]
+    },
+
+    {
+      name: 'obj/oats',
+      layout: [{id: 1, size: 0.10, y: -0.0425, z: 0.03},]
+    },
   ]
