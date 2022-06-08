@@ -17,3 +17,5 @@ roslaunch jaffa_apriltag apriltag.launch
 ```
 
 A debug image with the detected tags is published on topic `/tag_detections_image`.
+
+The script `visualisation.py` will publish markers for the objects at their current pose for visualisation and debugging.
